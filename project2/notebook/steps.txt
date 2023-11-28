@@ -1,0 +1,6 @@
+Steps:
+need to account for data imbalance 
+check correlation matrix 
+prune 1,2 columns ?? 
+random grid search 
+use that grid 
