@@ -1,4 +1,5 @@
 Steps:
+data encoding
 need to account for data imbalance 
 check correlation matrix 
 prune 1,2 columns ?? 
