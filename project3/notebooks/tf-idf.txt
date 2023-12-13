@@ -1,0 +1,48 @@
+import math
+import re
+from collections import Counter
+
+WORD = re.compile(r'\w+')
+
+def get_cosine(vec1, vec2):
+    intersection = set(vec1.keys()) & set(vec2.keys())
+    numerator = sum([vec1[x] * vec2[x] for x in intersection])
+    sum1 = sum([vec1[x] ** 2 for x in vec1.keys()])
+    sum2 = sum([vec2[x] ** 2 for x in vec2.keys()])
+    denominator = math.sqrt(sum1) * math.sqrt(sum2)
+    if not denominator:
+        return 0.0
+    else:
+        return float(numerator) / denominator
+
+def text_to_vector(text):
+    words = WORD.findall(text)
+    return Counter(words)
+
+def tfidf(query_string, set_of_strings):
+    query_vector = text_to_vector(query_string)
+    set_vectors = [text_to_vector(s) for s in set_of_strings]
+
+    # Calculate IDF
+    words = set(query_vector.keys())
+    idf = dict.fromkeys(words, 0)
+    for vector in set_vectors:
+        for word, count in vector.items():
+            if count > 0:
+                idf[word] += 1
+    for word, count in idf.items():
+        idf[word] = math.log(len(set_vectors) / float(count))
+
+    # Calculate TF-IDF
+    tfidf_vectors = []
+    for vector in set_vectors:
+        tfidf_vector = {}
+        for word, count in vector.items():
+            tf = count / float(len(vector))
+            tfidf_vector[word] = tf * idf[word]
+        tfidf_vectors.append(tfidf_vector)
+
+    # Calculate cosine similarity
+    similarities = [get_cosine(query_vector, v) for v in tfidf_vectors]
+
+    return similarities
