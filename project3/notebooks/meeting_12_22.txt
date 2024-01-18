@@ -1,0 +1,12 @@
+
+3. word2vec
+4. Glove
+
+5. FastText
+6 Bert 
+7. sBert
+
+existing libraries, dont need to implement yourself
+get similarities for each 
+replicate for each algorithm
+ranking, then re- ranking 
