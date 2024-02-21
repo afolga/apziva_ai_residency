@@ -3,3 +3,8 @@
 ### - Utilized decision trees and feature engineering to determine which features were the most important and trimmed the attributes that were not useful
 ### - Reached an accuracy for 73% and was able to predict if they were satisfied with the company
 ### - Algorithms used: SVC, K Nearest Neighbor, Random Forest, Decision Trees, Logistic Regression
+
+1. Introduction
+2. Data Dsitribution
+3. Methodology
+4. Technology
