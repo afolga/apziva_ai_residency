@@ -5,6 +5,8 @@
  - Algorithms used: SVC, K Nearest Neighbor, Random Forest, Decision Trees, Logistic Regression
 
 1. Introduction
-2. Data Dsitribution
+2. Data Distribution
 3. Methodology
+   * To achieve the accuracy necessary, both feature engineering and decision trees were used on this dataset. 
 4. Technology
+   * what to put in this section 
