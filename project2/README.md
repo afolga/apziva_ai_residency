@@ -4,6 +4,6 @@
  - Achieved a F1 score of 81% by using data engineering to determine which features are the most prominent in the dataset
  - Methods attempted: Naive Bayes, XG Boost, Random Grid Search, SVM, Multinomial Logistic Regression
 1. Introduction
-2. Data Dsitribution
+2. Data Distribution
 3. Methodology
 4. Technology
