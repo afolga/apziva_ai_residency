@@ -1,0 +1,10 @@
+moving to 4th project. gihtub, along with a demo 
+computer vision -> different from previous projects. want a mobile app, computer vision based. 
+looks at video, videos as images. are people flipping the pages or no. need to do a binary classificaiton if 
+page is flipping or no. approach - 2 primary approaches. 
+1) try to train a CNN from scratch, choose your own architecture. data is already split into train, test
+2) transform learning, already learning , fine tuning, already trained on world data, knows what kind of images were doing
+	3 architectures- VGG-16 ,ResNet, MobileNet . only change first and last layer according 
+focus on metrics . 2 - f1 score / accuracy (.91 and above), want model to be small, on an android (model less than 40 mb) 
+ <40MB
+F1-score >= 0.91
