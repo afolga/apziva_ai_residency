@@ -1,0 +1,25 @@
+Autoregressive (AR)
+
+Autoregressive Integrated Moving Average (ARIMA)
+
+Seasonal Autoregressive Integrated Moving Average (SARIMA)
+
+Exponential Smoothing (ES)
+
+Prophet
+
+LSTM(Deep Learning)
+
+dataset is old -> from covid times, maybe pull data from yahoo finance
+
+pick 1 company (microsoft, apple etc), and well use that instead . jan 2020 - current 
+
+train data is sequential jan 2020- decemer 2023
+
+test data : jan 2024 until current 
+
+try in same order (1,2,3,4,6,7)
+
+2nd part of project -- recommend to client , buy , sell (over 1 month)
+
+instead of flip -> 4 classes (types of flower), which flower is it . build CNN from scratch
