@@ -4,3 +4,4 @@
 ### Project 2: Term Deposit Marketing
 ### Project 3: Potential Talents
 ### Project 4: MonReader
+### Project 5: Stock Predictor
