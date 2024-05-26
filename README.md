@@ -5,3 +5,4 @@
 ### Project 3: Potential Talents
 ### Project 4: MonReader
 ### Project 5: Stock Predictor
+### Project 6: Voice Cloning and Fake Audio Detection
